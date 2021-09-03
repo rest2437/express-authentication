@@ -10,6 +10,11 @@ router.get("/signup", (req, res) => {
 router.get("/login", (req, res) => {
   res.render("auth/login");
 });
+router.get("/logout", (req, res) => {
+  req.logOut(); // logs the user out of the session
+  req.flash("success", "Logging out... See you next time!");
+  res.redirect("/");
+});
 
 router.post(
   "/login",
