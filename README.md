@@ -226,7 +226,7 @@ module.exports = (sequelize, DataTypes) => {
 
 ```text
 git add .
-git commit -m "add: User model and validations
+git commit -m "add: User model and validations"
 ```
 
 ## `5` Add Methods to `User` Model to Hash Password, Etc.
