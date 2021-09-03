@@ -407,7 +407,7 @@ passport.deserializeUser(async (id, cb) => {
 });
 ```
 
-`6` Use new instance of `LocalStrategy` inside of Passport as middleward
+`6` Use new instance of `LocalStrategy` inside of Passport as middleware
 
 ```js
 passport.use(STRATEGY);
