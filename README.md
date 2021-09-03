@@ -512,7 +512,7 @@ git add .
 git commit -m "isLoggedIn: add middleware and import to server"
 ```
 
-## `10` Make Login `/POST` Route
+## `10a` Make Login `/POST` Route
 
 We need now to make a `/POST` for the data that get submitted with the
 **login** form. The **`action`** in the fom specifies the route **`/auth/login`** that needs to be made for the data to go to. The data that is submitted will be check against the database to validity before being logged into the app.
@@ -554,7 +554,7 @@ git add .
 git commit -m "auth: add login post route"
 ```
 
-## `10` Make Signup `/POST` Route
+## `10b` Make Signup `/POST` Route
 
 We need now to make a `/POST` route for the data that get submitted with the **signup** form. The **`action`** in the fom specifies the route that needs to be made for the data to go to. The data that is submitted will be used to create a new user and added to the database. After signing up user, we will redirect them back to the login page to login.
 
