@@ -1,8 +1,10 @@
+//=================================IMPORTS=======================================
 const express = require("express");
 const router = express.Router();
 const passport = require("../config/ppConfig");
 const { User } = require("../models");
 
+//=================================GET ROUTS=======================================
 router.get("/signup", (req, res) => {
   res.render("auth/signup");
 });
@@ -16,6 +18,7 @@ router.get("/logout", (req, res) => {
   res.redirect("/");
 });
 
+//==================================POST ROUTS=====================================
 router.post(
   "/login",
   passport.authenticate("local", {
@@ -25,6 +28,7 @@ router.post(
     failureFlash: "Either email or password is incorrect",
   })
 );
+
 router.post("/signup", async (req, res) => {
   // we now have access to the user info (req.body);
   const { email, name, password } = req.body; // goes and us access to whatever key/value inside of the object
